@@ -184,6 +184,8 @@ margin: 0 auto 48px;}
 
         .pic-portfolio{margin-bottom: 32px;}
 
+        .item-portfolio{border-bottom: 1px solid #e7e9fc;}
+
         /* FOOTER */
 
 .footer{background-color: var(--background-color);
