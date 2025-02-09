@@ -1,10 +1,4 @@
 /* БАЗА */
-html{box-sizing: border-box;}
-
-*,
-*::before,
-*::after{box-sizing: inherit;}
-
 body{font-family: "Roboto", sans-serif;
 
 color:var(--title-color);
@@ -72,7 +66,11 @@ padding-bottom: 24px;}
 
 
   .list-nav{display: flex;
-  gap: 40px;}
+    gap: 40px;
+    
+  }
+
+  .list-nav .item-nav{width: calc((100% - 80px) / 3);}
 
 .item-nav .link {
   font-weight: 500;
@@ -90,9 +88,9 @@ color: inherit;}
 
 .list-contacts {
   display: flex;
-  gap: 40px;
-}
+  gap: 40px;}
 
+  .list-contacts.item-contacts{width: calc((100% - 80px) / 3);}
 
 
 
@@ -106,13 +104,18 @@ color: inherit;}
 
 /* SECTION HERO */
 
-.section-hero{background-color:var(--background-color);}
+.section-hero{background-color:var(--background-color);
+width: 1440px;
+  height: 600px;
+padding: 188px 0px;}
 
 .title-hero{
   font-size: 56px;
   line-height: 1.1;
   text-align: center;
-  color: #ffffff;}
+  color: #ffffff;
+max-width: 496px;
+margin: 0 auto 48px;}
 
 
 
@@ -124,18 +127,34 @@ color: inherit;}
     font-weight: 500;
     line-height: 1.5;
     letter-spacing: 0.04em;
-    color: #ffffff;}
+    color: #ffffff;
+    display: block;
+    margin: 0 auto;
+    border-radius: 4px;
+      padding: 16px 32px;
+      min-width: 169px;
+      
+
+  }
 
     .btn:hover,
     .btn:focus{background-color: var(--active-ocean);}
 
     /* SECTION ADVANDAGES */
 
+    
+
+    .visibility{visibility: hidden;}
+
+    .list-advandages{display: flex;
+    gap: 24px;}
+
     .title{
       font-weight: 500;
       font-size: 20px;
       line-height: 1.2;
-      color:var(--title-color);}
+      color:var(--title-color);
+    margin-bottom: 8px;}
 
       .text{line-height: 1.5;
         color:var(--text-color);
@@ -143,17 +162,39 @@ color: inherit;}
 
         /* OUR TEAM */
 
+       
+
+        .list-team{display: flex;
+        gap: 24px;}
+
         .title-first{font-size: 36px;
         line-height: 1.1;
-      color: var(--title-color);}
+      color: var(--title-color);
+      text-align: center;
+      margin-bottom: 72px;}
+
+      .pic-team{margin-bottom: 32px;}
 
         /* OUR PORTFOLIO */
 
+        .list-portfolio{display: flex;
+        flex-wrap: wrap;
+      row-gap: 48px;
+    column-gap: 24px;}
+
+        .pic-portfolio{margin-bottom: 32px;}
 
         /* FOOTER */
 
-.footer{background-color: var(--background-color);}
+.footer{background-color: var(--background-color);
+width: 1440px;
+  height: 312px;}
 
 .logo-footer{color:#f4f4fd;}
 
      .text.text-footer{color: #f4f4fd;}
+
+     .box-footer{padding-top: 102px;}
+
+     .text-footer{max-width: 264px;
+    margin-top: 17px;}
