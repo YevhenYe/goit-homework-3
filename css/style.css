@@ -41,7 +41,8 @@ margin: 0 auto;}
 
   /* HEADER */
 
-  .page-header{border-bottom: 1px solid #e7e9fc;}
+  .page-header{border-bottom: 1px solid #e7e9fc;
+  }
 
   /* LOGO */
 
@@ -55,26 +56,19 @@ margin: 0 auto;}
   margin-right: 76px;
 }
 
-  .logo-header{color:#2e2f42;
-  }
+  .logo-header{color:#2e2f42;}
 
   /* NAV */
 
-  .box-nav{display: flex;}
+  .box-nav{display: flex;
+  padding-top: 24px;
+    padding-bottom: 24px;}
 
-  .box-header{display: flex;
-  align-items: center;
-padding-top: 24px;
-padding-bottom: 24px;}
-  
-
+  .nav{display: flex;
+  align-items: center;}
 
   .list-nav{display: flex;
-    gap: 40px;
-    
-  }
-
-  .list-nav .item-nav{width: calc((100% - 80px) / 3);}
+    gap: 40px;}
 
 .item-nav .link {
   font-weight: 500;
@@ -93,10 +87,6 @@ color: inherit;}
 .list-contacts {
   display: flex;
   gap: 40px;}
-
-  .list-contacts.item-contacts{width: calc((100% - 80px) / 3);}
-
-
 
 .item-contacts .link{color: var(--text-color);}
 
@@ -138,49 +128,55 @@ margin: 0 auto 48px;}
       padding: 16px 32px;
       min-width: 169px;
       height: 56px;
-      bottom: none;
-
-  }
+      bottom: none;}
 
     .btn:hover,
     .btn:focus{background-color: var(--active-ocean);}
 
     /* SECTION ADVANDAGES */
 
-    
-
-        .visually-hidden {
-          position: absolute;
-          width: 1px;
-          height: 1px;
-          padding: 0;
-          margin: -1px;
-          overflow: hidden;
-          clip: rect(0, 0, 0, 0);
-          white-space: nowrap;
-          border: 0;
-        }
+    .visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border: 0;}
 
     .list-advandages{display: flex;
     gap: 24px;}
+
+    .item-advandages{width: calc((100% - 72px) / 4);}
 
     .title{
       font-weight: 500;
       font-size: 20px;
       line-height: 1.2;
       color:var(--title-color);
-    margin-bottom: 8px;}
+    margin-bottom: 8px;
+  }
 
       .text{line-height: 1.5;
         color:var(--text-color);
-      font-weight:400;}
+      font-weight:400;
+  }
 
         /* OUR TEAM */
 
-       
-
         .list-team{display: flex;
         gap: 24px;}
+
+        .item-team {
+          width: calc((100% - 72px) / 4);
+        border-radius: 0px 0px 4px 4px;}
+
+        .title-name{text-align: center;}
+
+        .text-name{text-align: center;}
+
 
         .title-first{font-size: 36px;
         line-height: 1.1;
@@ -188,7 +184,7 @@ margin: 0 auto 48px;}
       text-align: center;
       margin-bottom: 72px;}
 
-      .pic-team{margin-bottom: 32px;}
+      .box-name{padding: 32px 0px;}
 
         /* OUR PORTFOLIO */
 
@@ -197,21 +193,25 @@ margin: 0 auto 48px;}
       row-gap: 48px;
     column-gap: 24px;}
 
-        .pic-portfolio{margin-bottom: 32px;}
+    .box-app{padding: 32px 16px;
+    border: 1px solid #e7e9fc;
+  border-top: none;}
 
-        .item-portfolio{border-bottom: 1px solid #e7e9fc;}
+        
 
         /* FOOTER */
 
 .footer{background-color: var(--background-color);
 width: 1440px;
-  height: 312px;}
+  height: 312px;
+padding: 100px 0;}
+
+.logo-down{margin-bottom: 16px;
+display: inline-block;}
 
 .logo-footer{color:#f4f4fd;}
 
      .text.text-footer{color: #f4f4fd;}
 
-     .box-footer{padding-top: 102px;}
 
-     .text-footer{max-width: 264px;
-    margin-top: 17px;}
+     .text-footer{max-width: 264px;}
