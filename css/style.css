@@ -81,7 +81,8 @@ color: inherit;}
 
 .contacts {
   display: flex;
-  margin-left: auto;}
+  margin-left: auto;
+font-style: normal;}
 
 .list-contacts {
   display: flex;
@@ -100,8 +101,6 @@ color: inherit;}
 /* SECTION HERO */
 
 .section-hero{background-color:var(--background-color);
-width: 1440px;
-  height: 600px;
 padding: 188px 0px;}
 
 .title-hero{
@@ -169,6 +168,8 @@ margin: 0 auto 48px;}
 
         /* OUR TEAM */
 
+        .section-team{background-color:#f4f4fd;;}
+
         .list-team{display: flex;
         gap: 24px;}
 
@@ -205,8 +206,6 @@ margin: 0 auto 48px;}
         /* FOOTER */
 
 .footer{background-color: var(--background-color);
-width: 1440px;
-  height: 312px;
 padding: 100px 0;}
 
 .logo-down{margin-bottom: 16px;
