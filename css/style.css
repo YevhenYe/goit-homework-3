@@ -16,6 +16,8 @@ p {
 
   img{display: block;}
 
+    button {cursor: pointer;}
+
 
 .list{ list-style: none;
 padding: 0;
@@ -23,7 +25,6 @@ padding: 0;
 
 .link {text-decoration: none;}
 
-button{cursor: pointer;}
 
 :root {--primary-brand:#4D5AE5;
 --active-ocean:#404BBF;
